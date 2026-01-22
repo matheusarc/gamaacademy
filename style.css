@@ -675,7 +675,7 @@ img {
     align-items: center;
     gap: 8px;
     padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(144, 238, 144, 0.7); /* Verde claro com 70% de transparência */
     backdrop-filter: blur(5px);
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.2);
