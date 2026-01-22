@@ -36,8 +36,33 @@
                 </div>
                 <a href="cursos.html" class="btn btn-primary">Ver Cursos</a>
             </div>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <div class="logo-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="logo-text">
+                <h1>GamaAcademy</h1>
+                <span>Cursos de Segurança</span>
+            </div>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="validar.html">Validar Certificado</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="cursos.html" class="btn btn-primary" style="width: 100%;">Ver Cursos</a>
+        </div>
+    </div>
 
     <section class="page-hero">
         <div class="container">
@@ -86,8 +111,7 @@
                 <!-- Course 2 -->
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="https://images.unsplash.com/photo-1513258496099-48168024adb0?auto=format&fit=crop&w=400&q=60"
-                            alt="NR 10">
+                        <img src="assets/nr10.png" alt="NR 10">
                         <span class="course-badge">Online</span>
                         <div class="course-label">NR 10</div>
                     </div>
@@ -273,6 +297,23 @@
                 .then(reg => console.log('Service Worker registrado!', reg))
                 .catch(err => console.log('Erro ao registrar Service Worker', err));
         }
+
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+        function toggleSidebar() {
+            sidebar.classList.toggle('active');
+            sidebarOverlay.classList.toggle('active');
+        }
+
+        menuToggle.addEventListener('click', toggleSidebar);
+        sidebarOverlay.addEventListener('click', toggleSidebar);
+
+        const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', toggleSidebar);
+        });
     </script>
 </body>
 
