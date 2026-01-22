@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Certificado - GamaAcademy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="logo-text">
+                    <h1>GamaAcademy</h1>
+                    <span>Cursos de Segurança</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="validar.html">Validar Certificado</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="header-phone">
+                    <i class="fas fa-phone-alt"></i> (11) 99999-9999
+                </div>
+                <a href="cursos.html" class="btn btn-primary">Ver Cursos</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Validar Certificado</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Validar Certificado</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="page-section">
+        <div class="container">
+            <div class="form-container validation-card">
+                <div class="validation-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="section-header">
+                    <h2 class="section-title">Consulta de Autenticidade</h2>
+                    <p class="section-desc">Insira o código localizado no verso do seu certificado para verificar sua
+                        validade em nosso sistema.</p>
+                </div>
+
+                <form action="#">
+                    <div class="form-group">
+                        <label for="cert-id">Código do Certificado</label>
+                        <input type="text" id="cert-id" class="form-control" placeholder="Ex: SW-2024-XXXX"
+                            style="text-align: center; font-size: 1.2rem; letter-spacing: 2px;" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpf">CPF do Aluno</label>
+                        <input type="text" id="cpf" class="form-control" placeholder="000.000.000-00"
+                            style="text-align: center;" required>
+                    </div>
+                    <button type="submit" class="btn btn-secondary"
+                        style="width: 100%; padding: 15px; font-size: 1.1rem;">
+                        <i class="fas fa-search"></i> Verificar Autenticidade
+                    </button>
+                </form>
+
+                <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid #f1f5f9; text-align: left;">
+                    <h4 style="margin-bottom: 15px;"><i class="fas fa-info-circle"
+                            style="color: var(--primary-color);"></i> Como validar?</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light); line-height: 1.8;">
+                        1. Localize o código de validação no seu certificado digital ou impresso.<br>
+                        2. Digite o código exatamente como aparece, incluindo traços se houver.<br>
+                        3. Insira o CPF do titular do certificado para maior segurança.<br>
+                        4. Clique em verificar para obter os detalhes do treinamento, data de conclusão e validade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <div class="logo">
+                    <div class="logo-icon white"><i class="fas fa-shield-alt"></i></div>
+                    <div class="logo-text white">
+                        <h2>GamaAcademy</h2>
+                        <span>Cursos de Segurança</span>
+                    </div>
+                </div>
+                <p>Referência em treinamentos de segurança do trabalho e saúde ocupacional. Certificados válidos em todo
+                    território nacional.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cursos.html">Nossos Cursos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="validar.html">Validar Certificado</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav">
+                <h3>Cursos Populares</h3>
+                <ul>
+                    <li><a href="#">NR 10 - Eletricidade</a></li>
+                    <li><a href="#">NR 11 - Empilhadeira</a></li>
+                    <li><a href="#">NR 35 - Trabalho em Altura</a></li>
+                    <li><a href="#">NR 33 - Espaço Confinado</a></li>
+                    <li><a href="#">Direção Defensiva</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000<br>São Paulo - SP, 01310-100</li>
+                    <li><i class="fas fa-phone-alt"></i> (11) 99999-9999</li>
+                    <li><i class="fas fa-envelope"></i> contato@gamaacademy.com.br</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 GamaAcademy - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
