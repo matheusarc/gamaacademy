@@ -807,6 +807,11 @@ img {
 
     .menu-toggle {
         display: block;
+        order: 1;
+    }
+
+    .logo {
+        order: 2;
     }
 
     .hero-container,
@@ -849,13 +854,14 @@ img {
 .sidebar {
     position: fixed;
     top: 0;
-    left: calc(-1 * var(--sidebar-width));
+    left: 0;
     width: var(--sidebar-width);
     height: 100vh;
     background: var(--white);
     z-index: 2000;
     box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);
-    transition: var(--transition);
+    transform: translateX(-100%);
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     padding: 40px 25px;
     display: flex;
     flex-direction: column;
@@ -863,7 +869,7 @@ img {
 }
 
 .sidebar.active {
-    left: 0;
+    transform: translateX(0);
 }
 
 .sidebar-overlay {
@@ -875,11 +881,14 @@ img {
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(4px);
     z-index: 1999;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
 .sidebar-overlay.active {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .sidebar-nav ul {
