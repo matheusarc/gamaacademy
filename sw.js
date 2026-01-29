@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gama-academy-v2';
+const CACHE_NAME = 'gama-academy-v3';
 const ASSETS = [
   '/',
   '/index.html',
